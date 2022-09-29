@@ -10,6 +10,8 @@ import InviteContactModal from "../../../components/InviteContactModal";
 import EmptyStateResult from "../../../components/EmptyStateResult";
 import ListHeader from "./ListHeader";
 import Contact from "./Contact";
+import GET_CONTACTS from "../../../graphQL/query/getContacts";
+import { useQuery } from "@apollo/client";
 
 // actions
 import {
@@ -30,14 +32,20 @@ interface IndexProps {}
 const Index = (props: IndexProps) => {
   // global store
   const { dispatch, useAppSelector } = useRedux();
-
-  const { contactsList, getContactsLoading, isContactInvited } = useAppSelector(
-    state => ({
-      contactsList: state.Contacts.contacts,
-      getContactsLoading: state.Contacts.getContactsLoading,
-      isContactInvited: state.Contacts.isContactInvited,
-    })
-  );
+  const {
+    loading: getContactsLoading,
+    error,
+    data: contactsList,
+  } = useQuery(GET_CONTACTS, {
+    fetchPolicy: "network-only",
+  });
+  // const { contactsList, getContactsLoading, isContactInvited } = useAppSelector(
+  //   state => ({
+  //     contactsList: state.Contacts.contacts,
+  //     getContactsLoading: state.Contacts.getContactsLoading,
+  //     isContactInvited: state.Contacts.isContactInvited,
+  //   })
+  // );
 
   /*
   get contacts
@@ -49,14 +57,17 @@ const Index = (props: IndexProps) => {
   const [contacts, setContacts] = useState<Array<any>>([]);
   const [contactsData, setContactsData] = useState<Array<any>>([]);
   useEffect(() => {
-    if (contactsList.length > 0) {
-      setContacts(contactsList);
+    if (!getContactsLoading) {
+      console.log("Panna", contactsList);
+
+      setContacts(contactsList.getContactUser);
     }
-  }, [contactsList]);
+  }, [contactsList, getContactsLoading]);
 
   useEffect(() => {
+    console.log("Panna", contacts);
     if (contacts.length > 0) {
-      const formattedContacts = divideByKey("firstName", contacts);
+      const formattedContacts = divideByKey("name", contacts);
       setContactsData(formattedContacts);
     }
   }, [contacts]);
@@ -78,14 +89,14 @@ const Index = (props: IndexProps) => {
   const onInviteContact = (data: any) => {
     dispatch(inviteContact(data));
   };
-  useEffect(() => {
-    if (isContactInvited) {
-      setIsOpen(false);
-      setTimeout(() => {
-        dispatch(resetContacts("isContactInvited", false));
-      }, 1000);
-    }
-  }, [dispatch, isContactInvited]);
+  // useEffect(() => {
+  //   if (isContactInvited) {
+  //     setIsOpen(false);
+  //     setTimeout(() => {
+  //       dispatch(resetContacts("isContactInvited", false));
+  //     }, 1000);
+  //   }
+  // }, [dispatch, isContactInvited]);
 
   /*
   contact search
@@ -95,7 +106,7 @@ const Index = (props: IndexProps) => {
     setSearch(value);
     let modifiedContacts = [...contactsList];
     let filteredContacts = (modifiedContacts || []).filter((c: any) =>
-      c["firstName"].toLowerCase().includes(value.toLowerCase())
+      c["name"].toLowerCase().includes(value.toLowerCase())
     );
     setContacts(filteredContacts);
   };

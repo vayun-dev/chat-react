@@ -33,8 +33,8 @@ const ProfileUser = ({
     : imagePlaceholder;
   const fullName =
     chatUserDetails.name === undefined
-      ? chatUserDetails.firstName
-        ? `${chatUserDetails.firstName} ${chatUserDetails.lastName}`
+      ? chatUserDetails.name
+        ? `${chatUserDetails.name} ${chatUserDetails.lastName}`
         : "-"
       : chatUserDetails.name;
 

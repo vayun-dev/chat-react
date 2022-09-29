@@ -38,7 +38,7 @@ const ContactItem = ({
   selected,
   onSelectContact,
 }: ContactItemProps) => {
-  const fullName = `${contact.firstName} ${contact.lastName}`;
+  const fullName = `${contact.name} ${contact.lastName}`;
   const onCheck = (checked: boolean) => {
     onSelectContact(contact.id, checked);
   };

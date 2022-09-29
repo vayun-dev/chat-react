@@ -5,7 +5,7 @@ import img2 from "../assets/images/small/img-2.jpg";
 import img4 from "../assets/images/small/img-4.jpg";
 
 export interface BasicDetailsTypes {
-  firstName: string;
+  name: string;
   lastName: string;
   title: string;
   description: string;
@@ -45,7 +45,7 @@ export interface ProfileDetailsTypes {
 
 const profileDetails: ProfileDetailsTypes = {
   basicDetails: {
-    firstName: "Kathryn",
+    name: "Kathryn",
     lastName: "Swarey",
     title: "Front end Developer",
     description:

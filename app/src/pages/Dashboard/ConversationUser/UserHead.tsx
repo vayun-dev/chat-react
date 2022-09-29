@@ -43,15 +43,13 @@ const ProfileImage = ({
   isChannel,
 }: ProfileImageProps) => {
   const fullName = !isChannel
-    ? chatUserDetails.firstName
-      ? `${chatUserDetails.firstName} ${chatUserDetails.lastName}`
+    ? chatUserDetails.name
+      ? `${chatUserDetails.name} ${chatUserDetails.lastName}`
       : "-"
     : chatUserDetails.name;
   const shortName = !isChannel
-    ? chatUserDetails.firstName
-      ? `${chatUserDetails.firstName.charAt(
-          0
-        )}${chatUserDetails.lastName.charAt(0)}`
+    ? chatUserDetails.name
+      ? `${chatUserDetails.name.charAt(0)}${chatUserDetails.lastName.charAt(0)}`
       : "-"
     : "#";
 

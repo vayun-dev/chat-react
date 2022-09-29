@@ -55,8 +55,14 @@ const Login = (props: LoginProps) => {
 
   const history: any = useHistory();
   const location = useLocation<LocationTypes>();
+  const authData = JSON.parse(decodeURI(location.search.replace("?jwt=", "")));
+  // dispatch(loginUser(authData));
+  console.log("Panna1 auth: ", authData);
+
   const [redirectUrl, setRedirectUrl] = useState("/");
   useEffect(() => {
+    dispatch(loginUser(authData));
+
     const url =
       location.state && location.state.from
         ? location.state.from.pathname

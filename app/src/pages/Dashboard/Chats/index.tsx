@@ -32,10 +32,10 @@ import InviteContactModal from "../../../components/InviteContactModal";
 import AddButton from "../../../components/AddButton";
 import ContactModal from "../../../components/ContactModal";
 
-import Favourites from "./Favourites";
+// import Favourites from "./Favourites";
 import DirectMessages from "./DirectMessages";
-import Chanels from "./Chanels";
-import Archive from "./Archive";
+// import Chanels from "./Chanels";
+// import Archive from "./Archive";
 import { CHATS_TABS } from "../../../constants";
 
 interface IndexProps {}
@@ -235,11 +235,11 @@ const Index = (props: IndexProps) => {
           {active === CHATS_TABS.DEFAULT && (
             <>
               {/* favourite */}
-              <Favourites
+              {/* <Favourites
                 users={favourites}
                 selectedChat={selectedChat}
                 onSelectChat={onSelectChat}
-              />
+              /> */}
 
               {/* direct messages */}
               <DirectMessages
@@ -250,12 +250,12 @@ const Index = (props: IndexProps) => {
               />
 
               {/* channels list */}
-              <Chanels
+              {/* <Chanels
                 channels={channels}
                 openCreateChannel={openCreateChannelModal}
                 selectedChat={selectedChat}
                 onSelectChat={onSelectChat}
-              />
+              /> */}
               <h5 className="text-center mb-2">
                 <Link
                   to="#"
@@ -268,7 +268,7 @@ const Index = (props: IndexProps) => {
               </h5>
             </>
           )}
-          {active === CHATS_TABS.ARCHIVE && (
+          {/* {active === CHATS_TABS.ARCHIVE && (
             <>
               <Archive
                 archiveContacts={archiveContacts}
@@ -285,7 +285,7 @@ const Index = (props: IndexProps) => {
                 </Link>
               </h5>
             </>
-          )}
+          )} */}
 
           {/* End chat-message-list */}
         </AppSimpleBar>

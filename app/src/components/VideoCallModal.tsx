@@ -95,7 +95,7 @@ const VideoCallModal = ({ isOpen, onClose, user }: VideoCallModalProps) => {
           <div className="p-4 bg-primary mt-n4">
             <div className="text-white mt-4 text-center">
               <h5 className="font-size-18 text-truncate mb-0 text-white">
-                {user ? `${user.firstName} ${user.lastName}` : ""}
+                {user ? `${user.name} ${user.lastName}` : ""}
               </h5>
             </div>
           </div>

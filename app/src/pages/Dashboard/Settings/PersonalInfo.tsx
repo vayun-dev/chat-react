@@ -9,7 +9,7 @@ interface PersonalInfoProps {
 }
 const PersonalInfo = ({ basicDetails }: PersonalInfoProps) => {
   const fullName = basicDetails
-    ? `${basicDetails.firstName} ${basicDetails.lastName}`
+    ? `${basicDetails.name} ${basicDetails.lastName}`
     : "-";
   return (
     <div className="accordion-body">

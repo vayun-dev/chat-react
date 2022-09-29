@@ -19,7 +19,7 @@ interface UserProfileProps {
 }
 const UserProfile = ({ basicDetails, status }: UserProfileProps) => {
   const fullName = basicDetails
-    ? `${basicDetails.firstName} ${basicDetails.lastName}`
+    ? `${basicDetails.name} ${basicDetails.lastName}`
     : "-";
 
   /*

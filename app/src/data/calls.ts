@@ -11,7 +11,7 @@ import avatar10 from "../assets/images/users/avatar-10.jpg";
 
 export interface CallItem {
   callId: string | number;
-  firstName: string;
+  name: string;
   lastName: string;
   profileImage?: string;
   callDuration: string;
@@ -25,7 +25,7 @@ export interface CallItem {
 const calls: CallItem[] = [
   {
     callId: 0,
-    firstName: "Burgess",
+    name: "Burgess",
     lastName: "Burt",
     profileImage: avatar1,
     callDuration: "5:37",
@@ -37,7 +37,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 1,
-    firstName: "Bryant",
+    name: "Bryant",
     lastName: "Shaffer",
     profileImage: avatar2,
     callDuration: "5:24",
@@ -49,7 +49,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 2,
-    firstName: "Curtis",
+    name: "Curtis",
     lastName: "Spears",
     profileImage: avatar3,
     callDuration: "2:43",
@@ -61,30 +61,30 @@ const calls: CallItem[] = [
     peoples: [
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
       },
       {
         id: 1,
-        firstName: "Shaffer",
-        lastName: "Ballard",
-        profileImage: avatar5,
-      },
-      {
-        id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
+        lastName: "Ballard",
+        profileImage: avatar5,
+      },
+      {
+        id: 1,
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
@@ -92,7 +92,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 3,
-    firstName: "Mara",
+    name: "Mara",
     lastName: "Gilliam",
     callDuration: "2:41",
     isIncomming: false,
@@ -103,31 +103,31 @@ const calls: CallItem[] = [
     peoples: [
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar2,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
@@ -135,7 +135,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 4,
-    firstName: "Duncan",
+    name: "Duncan",
     lastName: "Snyder",
     callDuration: "1:57",
     isIncomming: false,
@@ -146,31 +146,31 @@ const calls: CallItem[] = [
     peoples: [
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
@@ -178,7 +178,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 5,
-    firstName: "Eunice",
+    name: "Eunice",
     lastName: "Atkinson",
     callDuration: "1:24",
     isIncomming: true,
@@ -189,7 +189,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 6,
-    firstName: "Meyer",
+    name: "Meyer",
     lastName: "Walton",
     profileImage: avatar4,
     callDuration: "1:22",
@@ -201,7 +201,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 7,
-    firstName: "Debra",
+    name: "Debra",
     lastName: "Davis",
     callDuration: "4:52",
     isIncomming: true,
@@ -212,30 +212,30 @@ const calls: CallItem[] = [
     peoples: [
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
       },
       {
         id: 1,
-        firstName: "Shaffer",
-        lastName: "Ballard",
-        profileImage: avatar5,
-      },
-      {
-        id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
+        lastName: "Ballard",
+        profileImage: avatar5,
+      },
+      {
+        id: 1,
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
@@ -243,7 +243,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 8,
-    firstName: "Hansen",
+    name: "Hansen",
     lastName: "Haynes",
     profileImage: avatar5,
     callDuration: "4:24",
@@ -255,31 +255,31 @@ const calls: CallItem[] = [
     peoples: [
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
@@ -287,7 +287,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 9,
-    firstName: "Freida",
+    name: "Freida",
     lastName: "Waters",
     profileImage: avatar6,
     callDuration: "4:13",
@@ -299,7 +299,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 10,
-    firstName: "Rosie",
+    name: "Rosie",
     lastName: "Russo",
     callDuration: "2:12",
     isIncomming: true,
@@ -310,30 +310,30 @@ const calls: CallItem[] = [
     peoples: [
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
       },
       {
         id: 1,
-        firstName: "Shaffer",
-        lastName: "Ballard",
-        profileImage: avatar5,
-      },
-      {
-        id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
+        lastName: "Ballard",
+        profileImage: avatar5,
+      },
+      {
+        id: 1,
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
@@ -341,7 +341,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 11,
-    firstName: "Day",
+    name: "Day",
     lastName: "Lawrence",
     callDuration: "5:33",
     isIncomming: true,
@@ -352,30 +352,30 @@ const calls: CallItem[] = [
     peoples: [
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
       },
       {
         id: 1,
-        firstName: "Shaffer",
-        lastName: "Ballard",
-        profileImage: avatar5,
-      },
-      {
-        id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
+        lastName: "Ballard",
+        profileImage: avatar5,
+      },
+      {
+        id: 1,
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
@@ -383,7 +383,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 12,
-    firstName: "Tamra",
+    name: "Tamra",
     lastName: "Dudley",
     profileImage: avatar7,
     callDuration: "2:55",
@@ -395,30 +395,30 @@ const calls: CallItem[] = [
     peoples: [
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
       },
       {
         id: 1,
-        firstName: "Shaffer",
-        lastName: "Ballard",
-        profileImage: avatar5,
-      },
-      {
-        id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
+        lastName: "Ballard",
+        profileImage: avatar5,
+      },
+      {
+        id: 1,
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
@@ -426,7 +426,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 13,
-    firstName: "Marissa",
+    name: "Marissa",
     lastName: "Weiss",
     callDuration: "2:52",
     isIncomming: false,
@@ -437,31 +437,31 @@ const calls: CallItem[] = [
     peoples: [
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
@@ -469,7 +469,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 14,
-    firstName: "Herrera",
+    name: "Herrera",
     lastName: "Randall",
     callDuration: "3:13",
     isIncomming: false,
@@ -480,7 +480,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 15,
-    firstName: "Mindy",
+    name: "Mindy",
     lastName: "Salas",
     profileImage: avatar8,
     callDuration: "3:44",
@@ -492,30 +492,30 @@ const calls: CallItem[] = [
     peoples: [
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
       },
       {
         id: 1,
-        firstName: "Shaffer",
-        lastName: "Ballard",
-        profileImage: avatar5,
-      },
-      {
-        id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
+        lastName: "Ballard",
+        profileImage: avatar5,
+      },
+      {
+        id: 1,
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
@@ -523,7 +523,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 16,
-    firstName: "Jacquelyn",
+    name: "Jacquelyn",
     lastName: "Norton",
     callDuration: "3:2",
     isIncomming: true,
@@ -534,7 +534,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 17,
-    firstName: "Beulah",
+    name: "Beulah",
     lastName: "Mcleod",
     profileImage: avatar9,
     callDuration: "3:18",
@@ -546,31 +546,31 @@ const calls: CallItem[] = [
     peoples: [
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
@@ -578,7 +578,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 18,
-    firstName: "Diane",
+    name: "Diane",
     lastName: "Morrow",
     profileImage: avatar10,
     callDuration: "2:20",
@@ -590,7 +590,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 19,
-    firstName: "Terry",
+    name: "Terry",
     lastName: "Rich",
     callDuration: "1:3",
     isIncomming: true,
@@ -601,7 +601,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 20,
-    firstName: "Mai",
+    name: "Mai",
     lastName: "Burch",
     callDuration: "1:25",
     isIncomming: true,
@@ -612,30 +612,30 @@ const calls: CallItem[] = [
     peoples: [
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
       },
       {
         id: 1,
-        firstName: "Shaffer",
-        lastName: "Ballard",
-        profileImage: avatar5,
-      },
-      {
-        id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
+        lastName: "Ballard",
+        profileImage: avatar5,
+      },
+      {
+        id: 1,
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
@@ -643,7 +643,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 21,
-    firstName: "Elaine",
+    name: "Elaine",
     lastName: "Sparks",
     callDuration: "4:32",
     isIncomming: false,
@@ -654,7 +654,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 22,
-    firstName: "Nunez",
+    name: "Nunez",
     lastName: "Dejesus",
     profileImage: avatar2,
     callDuration: "1:7",
@@ -666,31 +666,31 @@ const calls: CallItem[] = [
     peoples: [
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
@@ -698,7 +698,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 23,
-    firstName: "Carroll",
+    name: "Carroll",
     lastName: "Myers",
     callDuration: "1:58",
     isIncomming: true,
@@ -709,7 +709,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 24,
-    firstName: "Harrison",
+    name: "Harrison",
     lastName: "Mercer",
     callDuration: "1:12",
     isIncomming: false,
@@ -720,31 +720,31 @@ const calls: CallItem[] = [
     peoples: [
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
@@ -752,7 +752,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 25,
-    firstName: "Elsa",
+    name: "Elsa",
     lastName: "Dodson",
     profileImage: avatar10,
     callDuration: "4:8",
@@ -764,7 +764,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 26,
-    firstName: "Buckner",
+    name: "Buckner",
     lastName: "Hyde",
     callDuration: "4:2",
     isIncomming: true,
@@ -775,7 +775,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 27,
-    firstName: "Rivera",
+    name: "Rivera",
     lastName: "Holmes",
     callDuration: "3:20",
     isIncomming: true,
@@ -786,7 +786,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 28,
-    firstName: "Bonnie",
+    name: "Bonnie",
     lastName: "Mccullough",
     callDuration: "3:2",
     isIncomming: false,
@@ -797,30 +797,30 @@ const calls: CallItem[] = [
     peoples: [
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
       },
       {
         id: 1,
-        firstName: "Shaffer",
-        lastName: "Ballard",
-        profileImage: avatar5,
-      },
-      {
-        id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
+        lastName: "Ballard",
+        profileImage: avatar5,
+      },
+      {
+        id: 1,
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
@@ -828,7 +828,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 29,
-    firstName: "Chase",
+    name: "Chase",
     lastName: "Slater",
     callDuration: "1:47",
     isIncomming: true,
@@ -839,7 +839,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 30,
-    firstName: "Vaughn",
+    name: "Vaughn",
     lastName: "Tyson",
     callDuration: "5:37",
     isIncomming: false,
@@ -850,7 +850,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 31,
-    firstName: "Morin",
+    name: "Morin",
     lastName: "Kinney",
     callDuration: "3:51",
     isIncomming: true,
@@ -861,31 +861,31 @@ const calls: CallItem[] = [
     peoples: [
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
@@ -893,7 +893,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 32,
-    firstName: "Robertson",
+    name: "Robertson",
     lastName: "Mullins",
     callDuration: "0:3",
     isIncomming: false,
@@ -904,31 +904,31 @@ const calls: CallItem[] = [
     peoples: [
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
@@ -936,7 +936,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 33,
-    firstName: "Elsie",
+    name: "Elsie",
     lastName: "Berg",
     callDuration: "5:21",
     isIncomming: true,
@@ -947,30 +947,30 @@ const calls: CallItem[] = [
     peoples: [
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
       },
       {
         id: 1,
-        firstName: "Shaffer",
-        lastName: "Ballard",
-        profileImage: avatar5,
-      },
-      {
-        id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
+        lastName: "Ballard",
+        profileImage: avatar5,
+      },
+      {
+        id: 1,
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
@@ -978,7 +978,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 34,
-    firstName: "Christa",
+    name: "Christa",
     lastName: "Miles",
     callDuration: "2:21",
     isIncomming: true,
@@ -989,7 +989,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 35,
-    firstName: "Nanette",
+    name: "Nanette",
     lastName: "Edwards",
     callDuration: "2:43",
     isIncomming: false,
@@ -1000,7 +1000,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 36,
-    firstName: "Murray",
+    name: "Murray",
     lastName: "Buck",
     callDuration: "5:40",
     isIncomming: false,
@@ -1011,7 +1011,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 37,
-    firstName: "Shaffer",
+    name: "Shaffer",
     lastName: "Ballard",
     profileImage: avatar5,
     callDuration: "5:49",
@@ -1023,31 +1023,31 @@ const calls: CallItem[] = [
     peoples: [
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
@@ -1055,7 +1055,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 38,
-    firstName: "Rowena",
+    name: "Rowena",
     lastName: "Ray",
     callDuration: "1:31",
     isIncomming: false,
@@ -1066,30 +1066,30 @@ const calls: CallItem[] = [
     peoples: [
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
       },
       {
         id: 1,
-        firstName: "Shaffer",
-        lastName: "Ballard",
-        profileImage: avatar5,
-      },
-      {
-        id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
       {
         id: 1,
-        firstName: "Shaffer",
+        name: "Shaffer",
+        lastName: "Ballard",
+        profileImage: avatar5,
+      },
+      {
+        id: 1,
+        name: "Shaffer",
         lastName: "Ballard",
         profileImage: avatar5,
       },
@@ -1097,7 +1097,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 39,
-    firstName: "Mallory",
+    name: "Mallory",
     lastName: "Riddle",
     profileImage: avatar5,
     callDuration: "2:41",
@@ -1109,7 +1109,7 @@ const calls: CallItem[] = [
   },
   {
     callId: 40,
-    firstName: "Latasha",
+    name: "Latasha",
     lastName: "Gardner",
     profileImage: avatar6,
     callDuration: "4:37",

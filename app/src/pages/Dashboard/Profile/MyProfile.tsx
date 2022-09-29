@@ -19,7 +19,7 @@ const MyProfile = ({ basicDetails }: MyProfileProps) => {
   const toggle = () => setDropdownOpen(!dropdownOpen);
 
   const fullName = basicDetails
-    ? `${basicDetails.firstName} ${basicDetails.lastName}`
+    ? `${basicDetails.name} ${basicDetails.lastName}`
     : "-";
   return (
     <>

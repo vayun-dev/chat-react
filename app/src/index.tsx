@@ -5,12 +5,16 @@ import { Provider } from "react-redux";
 import reportWebVitals from "./reportWebVitals";
 import { configureStore } from "./redux/store";
 import { BrowserRouter } from "react-router-dom";
+import { ApolloProvider } from "@apollo/client";
+import apolloClient from "./lib/apollo";
 
 ReactDOM.render(
   <Provider store={configureStore({})}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <ApolloProvider client={apolloClient}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ApolloProvider>
   </Provider>,
   document.getElementById("root")
 );

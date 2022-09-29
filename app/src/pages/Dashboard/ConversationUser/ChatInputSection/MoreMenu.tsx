@@ -82,6 +82,30 @@ const MoreMenu = ({
                   </Label>
                 </div>
                 <h5 className="font-size-11 text-uppercase mt-3 mb-0 text-body text-truncate">
+                  Canned Messages
+                </h5>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="text-center px-2 position-relative">
+                <div>
+                  <Input
+                    id="attachedfile-input"
+                    type="file"
+                    className="d-none"
+                    onChange={(e: any) => onSelectF(e)}
+                    multiple
+                  />
+                  <Label
+                    htmlFor="attachedfile-input"
+                    className="avatar-sm mx-auto stretched-link"
+                  >
+                    <span className="avatar-title font-size-18 bg-soft-primary text-primary rounded-circle">
+                      <i className="bx bx-paperclip"></i>
+                    </span>
+                  </Label>
+                </div>
+                <h5 className="font-size-11 text-uppercase mt-3 mb-0 text-body text-truncate">
                   Attached
                 </h5>
               </div>

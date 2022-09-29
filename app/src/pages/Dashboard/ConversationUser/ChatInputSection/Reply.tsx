@@ -28,8 +28,8 @@ const Reply = ({ reply, onSetReplyData, chatUserDetails }: ReplyProps) => {
 
   const { userProfile } = useProfile();
 
-  const replyUserName = chatUserDetails.firstName
-    ? `${chatUserDetails.firstName} ${chatUserDetails.lastName}`
+  const replyUserName = chatUserDetails.name
+    ? `${chatUserDetails.name} ${chatUserDetails.lastName}`
     : "-";
   const isReplyFromMe =
     reply && reply.meta.sender + "" === userProfile.uid + "";

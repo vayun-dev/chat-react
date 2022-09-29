@@ -27,8 +27,8 @@ const ForwardMessage = ({
 }: ForwardMessageProps) => {
   const { userProfile } = useProfile();
 
-  const replyUserName = chatUserDetails.firstName
-    ? `${chatUserDetails.firstName} ${chatUserDetails.lastName}`
+  const replyUserName = chatUserDetails.name
+    ? `${chatUserDetails.name} ${chatUserDetails.lastName}`
     : "-";
   const isReplyFromMe =
     forwardData && forwardData.meta.sender + "" === userProfile.uid + "";
@@ -69,7 +69,7 @@ const ContactItem = ({
   onSelectContact,
   onSend,
 }: ContactItemProps) => {
-  const fullName = `${contact.firstName} ${contact.lastName}`;
+  const fullName = `${contact.name} ${contact.lastName}`;
   const onClick = () => {
     onSelectContact(contact.id, !selected);
     if (!selected) {
@@ -179,14 +179,14 @@ const ForwardModal = ({
     setSearch(value);
     let modifiedContacts = [...contactsList];
     let filteredContacts = (modifiedContacts || []).filter((c: any) =>
-      c["firstName"].toLowerCase().includes(value.toLowerCase())
+      c["name"].toLowerCase().includes(value.toLowerCase())
     );
-    const formattedContacts = divideByKey("firstName", filteredContacts);
+    const formattedContacts = divideByKey("name", filteredContacts);
     setContacts(formattedContacts);
   };
 
   const totalC = (contacts || []).length;
-  
+
   /*
   select contacts
   */

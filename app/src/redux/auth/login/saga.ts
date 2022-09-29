@@ -42,11 +42,15 @@ function* loginUser({ payload: { user } }: any) {
         authLoginApiResponseSuccess(AuthLoginActionTypes.LOGIN_USER, response)
       );
     } else if (process.env.REACT_APP_DEFAULTAUTH === "fake") {
-      const response: Promise<any> = yield call(postFakeLogin, {
-        email: user.email,
-        password: user.password,
-      });
-      setLoggeedInUser(response);
+      console.log("Panna3: ", user);
+      // const response: Promise<any> = yield call(postFakeLogin, {
+      //   email: user.email,
+      //   password: user.password,
+      // });
+      // console.log("Panna4:", response);
+      setLoggeedInUser(user.user);
+      const response = user.user;
+      localStorage.setItem("accessToken", user.accessToken);
       yield put(
         authLoginApiResponseSuccess(AuthLoginActionTypes.LOGIN_USER, response)
       );

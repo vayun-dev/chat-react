@@ -21,8 +21,8 @@ const Member = ({ member }: GroupProps) => {
   // global store
   const { dispatch } = useRedux();
 
-  const fullName = `${member.firstName} ${member.lastName}`;
-  const shortName = `${member.firstName.charAt(0)}${member.lastName.charAt(0)}`;
+  const fullName = `${member.name} ${member.lastName}`;
+  const shortName = `${member.name.charAt(0)}${member.lastName.charAt(0)}`;
 
   const colors = [
     "bg-primary",

@@ -19,7 +19,7 @@ import { MediaTypes, AttachedfileTypes } from "./myProfile";
 import { STATUS_TYPES } from "../constants";
 export interface ContactTypes {
   id: string | number;
-  firstName: string;
+  name: string;
   lastName: string;
   profileImage?: any;
   about?: string;
@@ -35,7 +35,7 @@ export interface ContactTypes {
 let contacts: ContactTypes[] = [
   {
     id: "614ecab426f59ce2863e106e",
-    firstName: "Sanford",
+    name: "Sanford",
     lastName: "Phelps",
     about: "If several languages coalesce, the grammar of the resulting.",
     email: "adc@123.com",
@@ -86,7 +86,7 @@ let contacts: ContactTypes[] = [
   },
   {
     id: "614ecab4aeecaa03e8244d57",
-    firstName: "Carla",
+    name: "Carla",
     lastName: "Serrano",
     profileImage: avatar1,
     about: "If several languages coalesce, the grammar of the resulting.",
@@ -135,7 +135,7 @@ let contacts: ContactTypes[] = [
   },
   {
     id: "614ecab44abffd0867521196",
-    firstName: "Alvarez",
+    name: "Alvarez",
     lastName: "Luna",
     about: "If several languages coalesce, the grammar of the resulting.",
     email: "adc@123.com",
@@ -183,7 +183,7 @@ let contacts: ContactTypes[] = [
   },
   {
     id: "614ecab463eda97c2df4fe9a",
-    firstName: "Norris",
+    name: "Norris",
     lastName: "Decker",
     profileImage: avatar2,
     about: "If several languages coalesce, the grammar of the resulting.",
@@ -236,7 +236,7 @@ let contacts: ContactTypes[] = [
   {
     id: "614ecab4ac946a9bdafa4e3b",
     isFavourite: true,
-    firstName: "Marguerite",
+    name: "Marguerite",
     lastName: "Campbell",
     profileImage: avatar4,
     about: "If several languages coalesce, the grammar of the resulting.",
@@ -306,7 +306,7 @@ let contacts: ContactTypes[] = [
   },
   {
     id: "614ecab41f60c4fdffe639c8",
-    firstName: "Katrina",
+    name: "Katrina",
     lastName: "Winters",
     profileImage: avatar3,
     about: "If several languages coalesce, the grammar of the resulting.",
@@ -381,7 +381,7 @@ let contacts: ContactTypes[] = [
   },
   {
     id: "614ecab400931b0aba9d0d76",
-    firstName: "Miranda",
+    name: "Miranda",
     lastName: "Valentine",
     about: "If several languages coalesce, the grammar of the resulting.",
     email: "adc@123.com",
@@ -456,7 +456,7 @@ let contacts: ContactTypes[] = [
   },
   {
     id: "614ecab4c2a5e35f32f78659",
-    firstName: "Faulkner",
+    name: "Faulkner",
     lastName: "Benjamin",
     profileImage: avatar5,
     about: "If several languages coalesce, the grammar of the resulting.",
@@ -531,7 +531,7 @@ let contacts: ContactTypes[] = [
   },
   {
     id: "614ecab4fd445a537e2bb2b5",
-    firstName: "Dean",
+    name: "Dean",
     lastName: "Vargas",
     about: "If several languages coalesce, the grammar of the resulting.",
     email: "adc@123.com",
@@ -605,7 +605,7 @@ let contacts: ContactTypes[] = [
   },
   {
     id: "614ecab4ebb18e740e372e80",
-    firstName: "Earnestine",
+    name: "Earnestine",
     lastName: "Sears",
     profileImage: avatar5,
     about: "If several languages coalesce, the grammar of the resulting.",
@@ -679,7 +679,7 @@ let contacts: ContactTypes[] = [
   },
   {
     id: "614ecab4fec7ab1ffb2a497d",
-    firstName: "Melody",
+    name: "Melody",
     lastName: "Montoya",
     about: "If several languages coalesce, the grammar of the resulting.",
     email: "adc@123.com",
@@ -753,7 +753,7 @@ let contacts: ContactTypes[] = [
   },
   {
     id: "614ecab4363b167c147a422b",
-    firstName: "Zimmerman",
+    name: "Zimmerman",
     lastName: "Langley",
     about: "If several languages coalesce, the grammar of the resulting.",
     email: "adc@123.com",
@@ -826,7 +826,7 @@ let contacts: ContactTypes[] = [
   },
   {
     id: "614ecab44fe4db874560b822",
-    firstName: "Wallace",
+    name: "Wallace",
     lastName: "Lane",
     profileImage: avatar6,
     about: "If several languages coalesce, the grammar of the resulting.",
@@ -900,7 +900,7 @@ let contacts: ContactTypes[] = [
   },
   {
     id: "614ecab49b13ce36ad017914",
-    firstName: "Jennifer",
+    name: "Jennifer",
     lastName: "Ramirez",
     profileImage: avatar7,
     about: "If several languages coalesce, the grammar of the resulting.",
@@ -974,7 +974,7 @@ let contacts: ContactTypes[] = [
   },
   {
     id: "614ecab48c8cc404a0604fc4",
-    firstName: "Heath",
+    name: "Heath",
     lastName: "Jarvis",
     about: "If several languages coalesce, the grammar of the resulting.",
     email: "adc@123.com",
@@ -1047,7 +1047,7 @@ let contacts: ContactTypes[] = [
   },
   {
     id: "614ecab45f5f3e45d25d5bbd",
-    firstName: "Kitty",
+    name: "Kitty",
     lastName: "Cannon",
     about: "If several languages coalesce, the grammar of the resulting.",
     email: "adc@123.com",
@@ -1121,7 +1121,7 @@ let contacts: ContactTypes[] = [
   },
   {
     id: "614ecab49785656f162d67db",
-    firstName: "Tonia",
+    name: "Tonia",
     lastName: "Clay",
     profileImage: avatar8,
     about: "If several languages coalesce, the grammar of the resulting.",
@@ -1196,7 +1196,7 @@ let contacts: ContactTypes[] = [
   },
   {
     id: "614ecab4a4666b6ff5f7864f",
-    firstName: "Hendrix",
+    name: "Hendrix",
     lastName: "Martin",
     profileImage: avatar9,
     about: "If several languages coalesce, the grammar of the resulting.",
@@ -1271,7 +1271,7 @@ let contacts: ContactTypes[] = [
   },
   {
     id: "614ecab43dbce45d6d996d9f",
-    firstName: "Donaldson",
+    name: "Donaldson",
     lastName: "Riddle",
     profileImage: avatar10,
     about: "If several languages coalesce, the grammar of the resulting.",
@@ -1345,7 +1345,7 @@ let contacts: ContactTypes[] = [
   },
   {
     id: "614ecab41b1f288b60a9f5c9",
-    firstName: "Daniels",
+    name: "Daniels",
     lastName: "Webster",
     about: "If several languages coalesce, the grammar of the resulting.",
     email: "adc@123.com",
@@ -1418,7 +1418,7 @@ let contacts: ContactTypes[] = [
   },
   {
     id: "614ecab413673c7385945500",
-    firstName: "Shawna",
+    name: "Shawna",
     lastName: "Wright",
     about: "Nothind to Display!",
     email: "ShawnaWright@123.com",

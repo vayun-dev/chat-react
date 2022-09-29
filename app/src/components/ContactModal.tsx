@@ -37,7 +37,7 @@ const ContactItem = ({
   selected,
   onSelectContact,
 }: ContactItemProps) => {
-  const fullName = `${contact.firstName} ${contact.lastName}`;
+  const fullName = `${contact.name} ${contact.lastName}`;
   const onClick = () => {
     onSelectContact(contact.id, !selected);
   };
@@ -119,9 +119,9 @@ const ContactModal = ({ isOpen, onClose, onAddContact }: ContactModalProps) => {
     setSearch(value);
     let modifiedContacts = [...contactsList];
     let filteredContacts = (modifiedContacts || []).filter((c: any) =>
-      c["firstName"].toLowerCase().includes(value.toLowerCase())
+      c["name"].toLowerCase().includes(value.toLowerCase())
     );
-    const formattedContacts = divideByKey("firstName", filteredContacts);
+    const formattedContacts = divideByKey("name", filteredContacts);
     setContacts(formattedContacts);
   };
 

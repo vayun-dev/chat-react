@@ -12,7 +12,7 @@ interface ProfileImageProps {
   call: CallItem;
 }
 const ProfileImage = ({ call }: ProfileImageProps) => {
-  const shortName = `${call.firstName.charAt(0)}${call.lastName.charAt(0)}`;
+  const shortName = `${call.name.charAt(0)}${call.lastName.charAt(0)}`;
 
   const colors = [
     "bg-primary",
@@ -33,9 +33,7 @@ const ProfileImage = ({ call }: ProfileImageProps) => {
         : null
       : null;
   const groupProfile = displayProfile
-    ? `${displayProfile.firstName.charAt(0)}${displayProfile.lastName.charAt(
-        0
-      )}`
+    ? `${displayProfile.name.charAt(0)}${displayProfile.lastName.charAt(0)}`
     : "";
 
   return (
@@ -137,7 +135,7 @@ const Call = ({ call }: CallProps) => {
     setIsOpenAudioModal(false);
   };
 
-  const fullName = `${call.firstName} ${call.lastName}`;
+  const fullName = `${call.name} ${call.lastName}`;
   const date = formateDate(call.callDate, "d MMM, yyyy, hh:mmp");
 
   return (

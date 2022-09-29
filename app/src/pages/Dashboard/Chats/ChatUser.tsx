@@ -12,8 +12,8 @@ interface ChatUserProps {
   onSelectChat: (id: number | string) => void;
 }
 const ChatUser = ({ user, selectedChat, onSelectChat }: ChatUserProps) => {
-  const fullName = `${user.firstName} ${user.lastName}`;
-  const shortName = `${user.firstName.charAt(0)}${user.lastName.charAt(0)}`;
+  const fullName = `${user.name} ${user.lastName}`;
+  const shortName = `${user.name.charAt(0)}${user.lastName.charAt(0)}`;
 
   const colors = [
     "bg-primary",

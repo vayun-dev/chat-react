@@ -4,7 +4,7 @@ import { contacts } from "./contacts";
 import { userChannels } from "./channels";
 export interface UserTypes {
   id: string | number;
-  firstName: string;
+  name: string;
   lastName: string;
   profileImage?: any;
   status?: STATUS_TYPES;

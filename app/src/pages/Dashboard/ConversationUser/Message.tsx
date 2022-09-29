@@ -290,8 +290,8 @@ const Message = ({
   const hasText = message.text;
   const isTyping = false;
 
-  const chatUserFullName = chatUserDetails.firstName
-    ? `${chatUserDetails.firstName} ${chatUserDetails.lastName}`
+  const chatUserFullName = chatUserDetails.name
+    ? `${chatUserDetails.name} ${chatUserDetails.lastName}`
     : "-";
 
   const myProfile = userProfile.profileImage
@@ -311,7 +311,7 @@ const Message = ({
   const isRead = message.meta.read;
   const isForwarded = message.meta.isForwarded;
   const channdelSenderFullname = message.meta.userData
-    ? `${message.meta.userData.firstName} ${message.meta.userData.lastName}`
+    ? `${message.meta.userData.name} ${message.meta.userData.lastName}`
     : "-";
   const fullName = isChannel ? channdelSenderFullname : chatUserFullName;
   const onDeleteMessage = () => {
